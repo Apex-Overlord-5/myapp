@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import StatefulComponent from './StatefulComponent';
+import StateUpdateExample from './StateUpdateExample';
+import ParentComponent from './ParentComponent';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Stateful Component Example</h1>
+      <StatefulComponent />
+
+      <h1>State Update Example</h1>
+      <StateUpdateExample />
+
+      <h1>Data Sharing Example</h1>
+      <ParentComponent />
     </div>
   );
 }
